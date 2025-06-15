@@ -38,7 +38,7 @@ func main() {
 		client.IRCClient.Say("punkystone", "TriHard")
 	})
 
-    client.IRCClient.Join("punkystone")
+    	client.IRCClient.Join("punkystone")
 
 	client.Connect()
 }
