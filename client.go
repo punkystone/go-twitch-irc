@@ -50,7 +50,7 @@ func (client *Client) Connect() {
 				continue
 			}
 			if !success {
-				client.sendError(fmt.Errorf("failed to refresh token: %w", err))
+				client.sendError(errors.New("failed to refresh token"))
 				time.Sleep(client.reconnectInterval)
 				continue
 			}
