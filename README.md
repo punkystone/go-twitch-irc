@@ -25,7 +25,7 @@ func main() {
 	client := client.NewClient("clientID", "clientSecret", "username", "accessToken", "refreshToken", nil)
 
 	go func() {
-    for err := range client.ErrorChannel {
+        for err := range client.ErrorChannel {
 			fmt.Println(err)
 		}
 	}()
